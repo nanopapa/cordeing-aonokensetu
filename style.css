@@ -183,6 +183,12 @@ text-align: left;
   
 }
 
+
+.info-list ul li a{
+  color: #000;
+  
+}
+
 .info-day{
   font-size:18px;
   padding-right:32px;
