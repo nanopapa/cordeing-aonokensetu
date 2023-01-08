@@ -1,165 +1,189 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>蒼乃建設</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="reset.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
 </head>
 <body>
-  
-<div class="container">
 
-  <header>
-    <div class="header-container">
-      <div class="header-flex">
-        <div class="flex-left">
-          <h1><a href="#">
-            <img src="images/header_logo.png" alt="ヘッダーロゴ">
-          </a></h1>
-        </div>
-        <!-- flex-left end--------------------------------------- -->
-
-          <div class="flex-right">
-            <nav>
-              <ul>
-                <li><a href="#">企業理念</a></li>
-                <li><a href="#">施工事例</a></li>
-                <li><a href="#">採用情報</a></li>
-                <li><a href="#">お問い合わせ</a></li>
-              </ul>
-            </nav>
-            <div class="toggle_btn">
-            <i></i>
-            <i></i>
-            <i></i>
-            </div>
+  <!--==============================================================
+  header
+  ============================================================== -->
+<div class="wrap">
+    <div class="header-wrap">
+      <div class="header-container">
+        <header class="header">
+          <h1>
+              <a href="#">
+                <img src="images/header_logo.png" alt="蒼乃建設" class="header-logo">
+              </a>
+          </h1>
+          <!-- ヘッダーナビ -->
+          <nav class="header-nav">
+            <ul>
+              <li>
+                <a href="#">企業理念</a>
+              </li>
+              <li>
+                <a href="#">施工事例</a>
+              </li>
+              <li>
+                <a href="#">採用情報</a>
+              </li>
+              <li>
+                <a href="#">お問い合わせ</a>
+              </li>
+              
+            </ul>
+          </nav>
+          <div class="toggle_btn" id="open">
+          <i></i>
+          <i></i>
+          <i></i>
           </div>
-<!-- flex-right end--------------------------------------- -->
+
+        </header>
+        <p class="header-main_text">街を作る。未来を作る。</p>
+
       </div>
-<!-- header-flex end--------------------------------------- -->
-
-<h2 class="header-text">街を作る。未来を作る。</h2>
-
-
     </div>
-<!-- header-container end--------------------------------------- -->
-  </header>
-
-
-<div class="info">
-  <div class="info-container">
-    <h3 >お知らせ</h3>
-    
-
-    <div class="info-list">
+    <div class="sp__menu" id="active">
       <ul>
-        <li><a href="#">
-         <span class="info-block"> <span class="info-day">2020.11.17</span>
-          <span class="info-border">お知らせ</span></span>
-          <span class="info-text">本社打合せ室が完成しました。</span>
-        </a></li>
-        <li><a href="#">
-         <span class="info-block"><span class="info-day">2020.11.10</span>
-          <span class="info-border">お知らせ</span></span> 
-          <span class="info-text">【メディア掲載】住宅雑誌 2020年11月号</span>
-        </a></li>
-        <li><a href="#">
-          <span class="info-block"><span class="info-day">2020.11.01</span>
-          <span class="info-border">お知らせ</span></span>
-          <span class="info-text">ホームページが完成しました。</span>
-        </a></li>
-      </ul>
-    </div>
-<!-- info-list end--------------------------------------- -->
-
-</div>
-<!-- info-container end--------------------------------------- -->
-
-</div>
-<!-- info end--------------------------------------- -->
-
-<div class="example">
-  <h4>施工事例</h4>
-
-  <div class="example-container">
-    <div class="example-flex">
-      <p><img src="images/building1.png" alt="施工事例01" class="example-img" id="img01"></p>
-
-      <p class="example-text">M様邸新築工事</p>
-      <p class="example-adress">埼玉県</p>
-      <a href="#"> <img src="images/more.png" alt="詳細を見る" class="more"></a>
-    </div>
-<!-- example-flex-left end--------------------------------------- -->
-
-    <div class="example-flex">
-      <p><img src="images/building2.png" alt="施工事例02" class="example-img"></p>
-
-      <p class="example-text">スカイビル</p>
-      <p class="example-adress">東京都</p>
-      <a href="#"> <img src="images/more.png" alt="詳細を見る" class="more"></a>
-
-    </div>
-<!-- example-flex-right end--------------------------------------- -->
-
+        <li><a href="#">企業理念</a></li>
+        <li><a href="#">施工事例</a></li>
+        <li><a href="#">採用情報</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+    </ul>
   </div>
-<!-- example-container end--------------------------------------- -->
+<!--==============================================================
+お知らせ
+============================================================== -->
 
-<p class="example-list"><a src="#">施工実績一覧</a></p>
+    <section class="news">
+        <h2 class="news-title">お知らせ</h2>
+
+        <ul class="news-list">
+          <li>
+            <a href="#">
+              <span class="news-list_block">
+                "2020.11.17"
+                <span class="news-list_border">お知らせ </span>
+              </span>
+              "本社打合せ室が完成しました。"
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <span class="news-list_block">
+                "2020.11.10"
+                <span class="news-list_border">お知らせ </span>
+              </span>
+              "【メディア掲載】住宅雑誌 2020年11月号"
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <span class="news-list_block">
+                "2020.11.01"
+                <span class="news-list_border">お知らせ </span>
+              </span>
+              "ホームページが完成しました。"
+            </a>
+          </li>
+        </ul>
+    </section>
+
+<!--==============================================================
+施工事例
+============================================================== -->
+<section class="case">
+  <h2 class="case-title">施工事例</h2>
+    <div class="flexbox">
+      <section class="case-content">
+        <p class="case-content_img">
+          <img src="images/building1.png" alt="M様邸新築工事">
+        </p>
+        <h3 class="case-content__title">M様邸新築工事</h3>
+        <p class="case-content_text">埼玉県</p>
+
+        <a href="#" class="case-content_btn">
+          <img src="images/more.png" alt="詳細を見る">
+        </a>
+      </section>
 
 
-</div>
-<!-- example end--------------------------------------- -->
+      <section class="case-content">
+        <p class="case-content_img">
+          <img src="images/building2.png" alt="スカイビル">
+        </p>
+        <h3 class="case-content__title">スカイビル</h3>
+        <p class="case-content_text">埼玉県</p>
 
-
-<div class="intro">
-
-  <ul>
-    <li><a href="#"><img src="images/company.png" alt=""></a></li>
-    <li><a href="#"><img src="images/recruit.png" alt=""></a></li>
-    <li><a href="#"><img src="images/contact.png" alt=""></a></li>
-  </ul>
-
-</div>
-<!-- intro end--------------------------------------- -->
-
-
-<footer>
-  <div class="footer-container">
-    <div class="footer-flex">
-      <a href="#"><img src="images/footer_logo.png" alt=""></a>
+        <a href="#" class="case-content_btn">
+          <img src="images/more.png" alt="詳細を見る">
+        </a>
+      </section>
     </div>
-    <!-- footer-flex end--------------------------------------- -->
-      <div class="footer-list">
-        <nav>
+<p class="case-btn">
+  <a href="#">施工実績一覧</a>
+</p>
+</section>
+
+<!--==============================================================
+links
+============================================================== -->
+
+<div class="links">
+  <a href="#" class="link-img">
+    <img src="images/company.png" alt="企業理念">
+  </a>
+  <a href="#" class="link-img">
+    <img src="images/recruit.png" alt="採用情報">
+  </a>
+  <a href="#" class="link-img">
+    <img src="images/contact.png" alt="お問い合わせ">
+  </a>
+</div>
+
+<!--==============================================================
+  footer
+============================================================== -->
+<footer class="footer"> 
+  <div class="footer-content">
+    <div class="footer-nav">
+        <p>
+          <a href="#">
+            <img src="images/footer_logo.png" alt="" class="footer-logo">
+          </a>
+        </p>
+        <nav class="footer-nav_list">
           <ul>
-            <li><a href="#">企業理念</a></li>
-            <li><a href="#">施工事例</a></li>
-            <li><a href="#">採用情報</a></li>
-            <li><a href="#">お問い合わせ</a></li>
+            <li>
+              <a href="#">企業理念</a>
+            </li>
+            <li>
+              <a href="#">施工事例</a>
+            </li>
+            <li>
+              <a href="#">採用情報</a>
+            </li>
+            <li>
+              <a href="#">お問い合わせ</a>
+            </li>
           </ul>
         </nav>
-      </div>
-<!-- footer-list end--------------------------------------- -->
-   
-
-</div>
-<!-- footer-container -->
+    </div>
     <p class="copyright">Copyright © 2020 Aono Corporation.</p>
-
-
-
+  </div>  
 </footer>
-
-
-
 </div>
-<!-- container end--------------------------------------- -->
 
-
-
-
+<script src="./main.js"></script>
 </body>
 </html>
