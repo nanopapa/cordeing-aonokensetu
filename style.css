@@ -11,6 +11,10 @@ body
 }
 
 
+body{
+  overflow-x: hidden;
+}
+
 h1,h2,h3,h4,h5,h6,p,a,li {
   line-height: 1.2;
   font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
